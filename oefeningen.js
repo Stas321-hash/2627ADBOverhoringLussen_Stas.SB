@@ -1,16 +1,19 @@
+/**
+ * Goed gewerkt. Je hebt de logica door wat een goed teken is.
+ */
+
 // oefening 1
 const leeftijd = 17;
 if (leeftijd < 16) {
-    console.log ("geen toegang");
-} 
-else if (leeftijd < 18) {
-    console.log ("toegang onder begeleiding.");
-    }
-    else { console.log ("volledige toegang.");
-     }
+  console.log("geen toegang");
+} else if (leeftijd < 18) {
+  console.log("toegang onder begeleiding.");
+} else {
+  console.log("volledige toegang.");
+}
 
-     //oefening 2
-    const temperaturen = [19, 22, 26, 21, 29, 18];
+//oefening 2
+const temperaturen = [19, 22, 26, 21, 29, 18];
 
 for (const t of temperaturen) {
   if (t >= 25) {
@@ -47,12 +50,17 @@ while (spaargeld < 1200) {
 console.log("Aantal maanden:", maanden);
 console.log("Spaarsaldo: €" + spaargeld);
 
+/**
+ * Waar is opgave 5?
+ */
+
 // Oefening 6: Pincode blokkeren na 3 pogingen
 const pincodes = ["1111", "2222", "3333", "4567"];
 const juisteCode = "4567";
 let poging = 0;
 let foutePogingen = 0;
 
+// While true hoef je niet te gebruiken hier.
 while (true) {
   if (pincodes[poging] === juisteCode) {
     console.log("Toegang verleend");
